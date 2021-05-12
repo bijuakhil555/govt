@@ -16,8 +16,17 @@ const firebaseConfig = {
 
   var confirmationResult;
 
-  firebase.initializeApp(firebaseConfig);
-class PhoneLogin extends Component {
+  
+
+
+  class PhoneLogin extends Component {
+
+
+    componentDidMount(){
+      firebase.initializeApp(firebaseConfig);
+    }
+
+
   constructor() {
     super();
     this.state = {

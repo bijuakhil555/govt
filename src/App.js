@@ -7,17 +7,20 @@ import Kit from './kit'
 import Billing from './billing'
 import Cart from './cart'
 import Product from './product'
+import PhoneLogin from './login'
+
 
 export default function App() {
   return (
     <Router>
     <div>
       <Switch>
-        {/* <Route path="/" exact component={Billing} /> */}
+
          <Route path="/" exact component={Home1} /> 
         <Route path="/kit" exact component={Product} />
         <Route path="/kit2" exact component={Home2} />
         <Route path="/cart" exact component={Cart} />
+        <Route path="/login" exact component={PhoneLogin} />
       </Switch>
     </div>
     </Router>
